@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/contactsLayout" >
+
+    <TextView android:id="@+id/TitleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black">
+    </TextView>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="#660033">
+        <TableRow android:layout_marginLeft="20dp">
+            <TextView
+                android:text="Name:"
+                android:width ="150px"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/txtname"
+                android:width="250dp"
+                android:background="@android:color/white"
+                android:minHeight="40dp"
+                android:layout_marginTop="25dp" />
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+            <TextView
+                android:text="Sex:"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp" />
+            <RadioGroup android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/QueGroup1">
+                <RadioButton android:checked="false"
+                    android:id="@+id/option1" android:text="M"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp" />
+                <RadioButton android:checked="false"
+                    android:id="@+id/option2" android:text="F"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp" />
+            </RadioGroup>
+
+        </TableRow>
+
+
+        <TableRow android:layout_marginLeft="20dp">
+            <TextView
+                android:text="Phone:"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/txtphone"
+                android:password="false"
+                android:background="@android:color/white"
+                android:minHeight="40dp"
+                android:layout_marginTop="10dp" />
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+            <TextView
+                android:text="Email:"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/txtemail"
+                android:password="false"
+                android:minHeight="40dp"
+                android:background="@android:color/white"
+                android:layout_marginTop="25dp" />
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+            <TextView
+                android:text="Postal Address:"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/txtpostaladdress"
+                android:password="false"
+                android:minHeight="40dp"
+                android:background="@android:color/white"
+                android:layout_marginTop="25dp" />
+        </TableRow>
+
+        <TableRow android:layout_marginLeft="20dp">
+            <Button
+                android:id="@+id/buttonsave"
+                android:text="Save"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="80dp"
+                android:textSize="18dp" />
+            <Button
+                android:id="@+id/buttonsend"
+                android:text="Send to Friends"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
